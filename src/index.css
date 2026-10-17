@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-dark: #0A0A0A;
+  --brand-orange: #F7861E;
+  --brand-amber: #FF8A00;
+  --brand-yellow: #FFE500;
+  --brand-teal: #18A999;
+  --brand-aqua: #7ED6D3;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 5px;
+  border: 2px solid #0A0A0A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F7861E;
+}
+
+/* Sticker badge styles echoing logo */
+.badge-sticker-white {
+  position: relative;
+  background-color: #0A0A0A;
+  box-shadow: 0 0 0 3px #FFFFFF, 0 8px 24px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.badge-sticker-white:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 0 4px #FFFFFF, 0 16px 32px -4px rgba(247, 134, 30, 0.35);
+}
+
+.badge-sticker-orange {
+  position: relative;
+  box-shadow: 0 0 0 3px #F7861E, 0 8px 24px -4px rgba(247, 134, 30, 0.4);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.badge-sticker-teal {
+  position: relative;
+  box-shadow: 0 0 0 3px #18A999, 0 8px 24px -4px rgba(24, 169, 153, 0.4);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-orange {
+  background: rgba(247, 134, 30, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(247, 134, 30, 0.25);
+}
+
+/* Display font headings with logo-style italic feel */
+.logo-font {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.animate-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  transform: skewX(-20deg);
+  animation: shimmer 2.5s infinite;
+}
+
+/* Gentle road pulse */
+@keyframes roadDash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+.road-line {
+  stroke-dasharray: 10, 10;
+  animation: roadDash 1s linear infinite;
+}

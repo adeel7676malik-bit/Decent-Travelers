@@ -1,0 +1,10 @@
+# Decent Travelers - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://decenttravelers.com/sitemap.xml
+
+# LLM & AI Context
+# For AI crawlers and assistants, see:
+# https://decenttravelers.com/llms.txt
