@@ -1,4 +1,4 @@
-import { SiteConfig, Destination, TripType, Testimonial, FAQItem, GalleryItem } from '../types'
+import { SiteConfig, Destination, TripType, InternationalTour, Testimonial, FAQItem, GalleryItem } from '../types'
 
 /**
  * ==============================================================================
@@ -307,6 +307,169 @@ export const tripTypes: TripType[] = [
     idealFor: "Diaspora families from UK, USA, Gulf & foreign tourists",
     popularDestination: "Karakoram Highway, Hunza & Skardu",
     image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
+  }
+]
+
+/**
+ * 6 SIGNATURE INTERNATIONAL & FOREIGN DESTINATIONS
+ * Handcrafted outbound tour packages with visa assistance & VIP transfers
+ */
+export const internationalTours: InternationalTour[] = [
+  {
+    id: "baku",
+    name: "Baku",
+    country: "Azerbaijan (Capital)",
+    tagline: "The Capital City of Flame Towers & Caspian Romance",
+    duration: "5 Days / 4 Nights",
+    badge: "Easy E-Visa · 3 Days",
+    accentColor: "border-brand-orange text-brand-orange",
+    image: "/images/destinations/baku.jpg",
+    highlights: [
+      "Iconic Flame Towers & Highland Park panoramic views",
+      "Historic Old City (Icherisheher) & Maiden Tower",
+      "Heydar Aliyev Cultural Centre architectural tour",
+      "Gobustan Mud Volcanoes & Ateshgah Fire Temple",
+      "Caspian Sea Boulevard & vibrant Nizami Street"
+    ],
+    includes: [
+      "Return Flights Assistance",
+      "4-Star Luxury City Hotel + Breakfast",
+      "Private Airport & Sightseeing Transfers",
+      "English & Urdu Speaking Tour Guide",
+      "Official E-Visa Processing Support"
+    ],
+    bestFor: "Families, couples & modern cultural explorers",
+    visaInfo: "Quick 3-day E-Visa facility for Pakistani passport holders"
+  },
+  {
+    id: "turkey",
+    name: "Turkey",
+    country: "Türkiye (Istanbul & Cappadocia)",
+    tagline: "Where East Meets West & Fairytale Landscapes",
+    duration: "7 Days / 6 Nights",
+    badge: "Most Popular Outbound",
+    accentColor: "border-rose-500 text-rose-400",
+    image: "/images/destinations/turkey.jpg",
+    highlights: [
+      "Istanbul Sultanahmet (Blue Mosque & Hagia Sophia)",
+      "Luxury Bosphorus Strait Sunset Cruise",
+      "Cappadocia Sunrise Hot Air Balloon Experience",
+      "Underground Cities & Goreme Open Air Museum",
+      "Grand Bazaar shopping & Princess Islands day trip"
+    ],
+    includes: [
+      "Domestic Flights (Istanbul ⇄ Cappadocia)",
+      "4-Star / Deluxe Cave Resort Accommodation",
+      "Daily Buffet Breakfast & Traditional Dinners",
+      "AC Coach with Professional English Tour Leader",
+      "Full Visa File Preparation & Appointment Help"
+    ],
+    bestFor: "Honeymooners, history lovers & family vacations",
+    visaInfo: "Complete document preparation & sticker/e-visa assistance"
+  },
+  {
+    id: "malaysia",
+    name: "Malaysia",
+    country: "Malaysia (Kuala Lumpur & Langkawi)",
+    tagline: "Truly Asia — Tropical Islands & Futuristic Metros",
+    duration: "6 Days / 5 Nights",
+    badge: "Family & Theme Parks",
+    accentColor: "border-brand-teal text-brand-teal",
+    image: "/images/destinations/malaysia.jpg",
+    highlights: [
+      "Petronas Twin Towers SkyBridge & Observation Deck",
+      "Batu Caves colorful steps & Lord Murugan Statue",
+      "Genting Highlands Cable Car & Indoor Theme Park",
+      "Langkawi Island SkyBridge & Cable Car",
+      "Kilim Geoforest Mangrove Safari & Eagle Watching"
+    ],
+    includes: [
+      "4-Star Hotel in KL & Luxury Langkawi Beach Resort",
+      "Domestic Flight (Kuala Lumpur ⇄ Langkawi)",
+      "Daily International Buffet Breakfast",
+      "Private AC Car Transfers & City Sightseeing",
+      "eVisa Submission Assistance"
+    ],
+    bestFor: "Families with kids, shopping enthusiasts & nature lovers",
+    visaInfo: "Fast online eVisa processing for Pakistani citizens"
+  },
+  {
+    id: "singapore",
+    name: "Singapore",
+    country: "Singapore",
+    tagline: "The Futuristic Garden City of Tomorrow",
+    duration: "5 Days / 4 Nights",
+    badge: "Futuristic & Luxury",
+    accentColor: "border-cyan-400 text-cyan-300",
+    image: "/images/destinations/singapore.jpg",
+    highlights: [
+      "Marina Bay Sands SkyPark Observation Deck",
+      "Gardens by the Bay Flower Dome & Supertree Light Show",
+      "Sentosa Island Cable Car & Madame Tussauds",
+      "Universal Studios Singapore full day passes",
+      "Jewel Changi Rain Vortex & Orchard Road shopping"
+    ],
+    includes: [
+      "Centrally Located 4-Star Premium Hotel",
+      "Airport VIP Changi Transfers both ways",
+      "Sentosa Cable Car & Attraction Entry Tickets",
+      "Daily Breakfast & Guided City Excursion",
+      "Official Singapore E-Visa Filing"
+    ],
+    bestFor: "Tech-savvy travelers, luxury seekers & family groups",
+    visaInfo: "Authorized electronic visa processing with verified submission"
+  },
+  {
+    id: "bali",
+    name: "Bali",
+    country: "Indonesia (Island of Gods)",
+    tagline: "Emerald Rice Terraces, Temples & Coastal Villas",
+    duration: "6 Days / 5 Nights",
+    badge: "Top Honeymoon Pick",
+    accentColor: "border-amber-400 text-amber-300",
+    image: "/images/destinations/bali.jpg",
+    highlights: [
+      "Ubud Tegalalang Rice Terraces & Famous Jungle Swing",
+      "Ulun Danu Beratan iconic Lake Temple & Gardens",
+      "Tanah Lot Sea Temple at magical golden hour",
+      "Nusa Penida Island day trip (Kelingking Cliff Beach)",
+      "Tanjung Benoa thrilling watersports & seafood dinner"
+    ],
+    includes: [
+      "Private Pool Luxury Villa in Ubud + Kuta Beach Resort",
+      "Dedicated Private AC Car & Chauffeur for all days",
+      "Speedboat Return Tickets to Nusa Penida Island",
+      "Romantic Candlelit Dinner Setup for Couples",
+      "Electronic Visa on Arrival (e-VoA) Support"
+    ],
+    bestFor: "Newlyweds, couple anniversaries & serenity seekers",
+    visaInfo: "Hassle-free Electronic Visa on Arrival (e-VoA)"
+  },
+  {
+    id: "azerbaijan-regions",
+    name: "Azerbaijan Countryside",
+    country: "Shahdag & Gabala (Azerbaijan)",
+    tagline: "Alpine Ski Resorts & Pristine Mountain Valleys",
+    duration: "6 Days / 5 Nights",
+    badge: "Snow & Mountains Combo",
+    accentColor: "border-brand-aqua text-brand-aqua",
+    image: "/images/destinations/azerbaijan.jpg",
+    highlights: [
+      "Shahdag Mountain Resort skiing & alpine coaster ride",
+      "Gabala Tufandag Mountain Ropeway & snow parks",
+      "Nohur Gol tranquil lake pedal-boating & horseback riding",
+      "7 Gozel (Seven Beauties) Waterfall pine forest trek",
+      "Traditional Azerbaijani tea ceremony in mountain wooden huts"
+    ],
+    includes: [
+      "Shahdag Mountain Resort & Baku City Combo Hotel",
+      "All Inter-city Transfers in Heated Luxury Van",
+      "Cable Car & Resort Sightseeing Activity Passes",
+      "Full Halal Meals & Daily Breakfast Buffet",
+      "Complete 3-Day E-Visa Processing"
+    ],
+    bestFor: "Adventure travelers, winter snow lovers & family retreats",
+    visaInfo: "Fast 3-day E-Visa combined with Baku itinerary"
   }
 ]
 

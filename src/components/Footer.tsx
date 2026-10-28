@@ -136,6 +136,11 @@ export const Footer: React.FC = () => {
               Trip Packages
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm">
+              <li>
+                <a href="#international-tours" className="text-brand-orange font-bold hover:underline transition-colors flex items-center gap-1.5">
+                  <span>✈️ International Tours</span>
+                </a>
+              </li>
               {tripTypes.map((trip) => (
                 <li key={trip.id}>
                   <a href="#trips" className="hover:text-brand-teal transition-colors">

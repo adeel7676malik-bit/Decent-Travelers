@@ -30,6 +30,21 @@ export interface TripType {
   image: string
 }
 
+export interface InternationalTour {
+  id: string
+  name: string
+  country: string
+  tagline: string
+  duration: string
+  badge: string
+  accentColor: string
+  image: string
+  highlights: string[]
+  includes: string[]
+  bestFor: string
+  visaInfo: string
+}
+
 export interface Testimonial {
   id: string
   name: string

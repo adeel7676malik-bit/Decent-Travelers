@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { Destinations } from './components/Destinations'
 import { TripTypes } from './components/TripTypes'
+import { InternationalTours } from './components/InternationalTours'
 import { WhyUs } from './components/WhyUs'
 import { HowItWorks } from './components/HowItWorks'
 import { Gallery } from './components/Gallery'
@@ -38,13 +39,19 @@ export function App() {
         {/* Mountain Divider into Trip Types */}
         <MountainDivider fillColor="#0D0D0D" backgroundColor="#0A0A0A" />
 
-        {/* Section 4: Trip Types (Family, Corporate, Honeymoon, etc.) */}
+        {/* Section 4: Trip Types (Specialized Trip Categories) */}
         <TripTypes />
 
-        {/* Mountain Divider into Why Us */}
-        <MountainDivider fillColor="#070707" backgroundColor="#0D0D0D" />
+        {/* Mountain Divider into International Tours */}
+        <MountainDivider fillColor="#0A0A0A" backgroundColor="#0D0D0D" />
 
-        {/* Section 5: Why Choose Us ("Decent" Brand Promise) */}
+        {/* Section 5: International Tours (Baku, Azerbaijan, Turkey, Malaysia, Singapore, Bali) */}
+        <InternationalTours />
+
+        {/* Mountain Divider into Why Us */}
+        <MountainDivider fillColor="#070707" backgroundColor="#0A0A0A" />
+
+        {/* Section 6: Why Choose Us ("Decent" Brand Promise) */}
         <WhyUs />
 
         {/* Mountain Divider into How It Works */}
